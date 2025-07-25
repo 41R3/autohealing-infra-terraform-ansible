@@ -1,0 +1,30 @@
+---
+- name: Configurar Nginx en Amazon Linux 2023
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Instalar Nginx
+      dnf:
+        name: nginx
+        state: present
+
+    - name: Iniciar y habilitar Nginx
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Crear contenido HTML
+      copy:
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head><title>AutoHealing Works!</title></head>
+          <body>
+            <h1>Sistema Auto-Healing Funcionando en AL2023!</h1>
+            <p>Host: {{ ansible_hostname }}</p>
+          </body>
+          </html>
+        dest: /usr/share/nginx/html/index.html
