@@ -7,7 +7,7 @@ variable "aws_region" {
 }
 
 variable "key_name" {
-  description = "autohealing-key"
+  description = "Nombre del par de claves (Key Pair) para SSH"
   type        = string
   default     = "autohealing-key"  # Cambiar si usas otro nombre
 }
@@ -39,13 +39,13 @@ variable "subnet_count" {
 variable "asg_min_size" {
   description = "Número mínimo de instancias en el Auto Scaling Group"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "asg_max_size" {
   description = "Número máximo de instancias en el Auto Scaling Group"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "repo_url" {
