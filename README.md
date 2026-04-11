@@ -5,7 +5,7 @@ This project deploys an AWS infrastructure setup that automatically heals itself
 
 ---
 
-## 🚀 Features & Benefits
+##  Features & Benefits
 
 - **Auto-Healing Capability**: Automatically replaces failed instances
 - **High Availability**: Load balancer distributes traffic across instances
@@ -16,7 +16,7 @@ This project deploys an AWS infrastructure setup that automatically heals itself
 
 ---
 
-## 🛠️ Tech Stack
+## Stack
 
 - **Terraform**: Infrastructure provisioning
 - **Ansible**: Server configuration
@@ -29,7 +29,7 @@ This project deploys an AWS infrastructure setup that automatically heals itself
 
 ---
 
-## ⚙️ How It Works
+##  Works
 
 1. Terraform creates the infrastructure:
    - VPC with public subnets
@@ -48,8 +48,6 @@ This project deploys an AWS infrastructure setup that automatically heals itself
 4. Load Balancer routes traffic to healthy instances
 
 ---
-
-## 🚀 Getting Started
 
 ### Prerequisites
 - AWS account with IAM user
@@ -127,7 +125,7 @@ terraform destroy -auto-approve
 
 ---
 
-## 📂 Project Structure
+##   Structure
 ```
 autohealing-infra-terraform-ansible/
 ├── terraform/                   # Infrastructure code
@@ -148,28 +146,12 @@ autohealing-infra-terraform-ansible/
 └── README.md                    # Project documentation
 ```
 
-## 🚨 Important Notes
+##  Notes
 
 - **Free Tier Limitations**: Stay within AWS Free Tier limits
 - **Educational Purpose**: Not for production use without modifications
 - **Security**: This demo uses open security groups - tighten for production
 - **Cost**: Always destroy resources when not in use (`terraform destroy`)
 
----
-## 📜 License
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
 
 
-## ☕ Support the Project
-
-If this project helped you, consider supporting my work:
-
-👉 ko-fi.com/4er1_
-
----
-**Happy coding!** 🚀
