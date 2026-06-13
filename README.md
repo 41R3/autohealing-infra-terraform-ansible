@@ -3,8 +3,6 @@
 **Self-healing AWS infrastructure with Terraform and Ansible**  
 This project deploys an AWS infrastructure setup that automatically heals itself: EC2 instances in an Auto Scaling Group with monitoring and automation to keep everything running smoothly.
 
----
-
 ##  Features & Benefits
 
 - **Auto-Healing Capability**: Automatically replaces failed instances
@@ -13,8 +11,6 @@ This project deploys an AWS infrastructure setup that automatically heals itself
 - **Zero-Touch Configuration**: Ansible automates server setup
 - **Cost Optimized**: Uses AWS Free Tier eligible resources
 - **Resilient Architecture**: Survives instance failures without downtime
-
----
 
 ## Stack
 
@@ -26,8 +22,6 @@ This project deploys an AWS infrastructure setup that automatically heals itself
   - Auto Scaling Groups
   - Application Load Balancer
 - **GitHub**: Version control and CI/CD
-
----
 
 ##  Works
 
@@ -47,15 +41,13 @@ This project deploys an AWS infrastructure setup that automatically heals itself
    - Ansible auto-configures new instance
 4. Load Balancer routes traffic to healthy instances
 
----
-
 ### Prerequisites
 - AWS account with IAM user
 - AWS CLI configured (`aws configure`)
 - Terraform installed
 - SSH key pair in AWS
 
-### Step-by-Step Deployment
+###  Deployment
 
 1. **Clone the repository**:
 ```bash
@@ -97,7 +89,7 @@ terraform apply -auto-approve
 echo "http://$(terraform output -raw load_balancer_dns)"
 ```
 
-### Testing Auto-Healing
+### Testing 
 
 1. **Get an instance ID**:
 ```bash
